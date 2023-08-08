@@ -3,20 +3,16 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String score_input = sc.next();
-        int score = Integer.parseInt(score_input);
-        if (score > 95){score = 1;}
-        if (score > 85){score = 2;}
-        if (score > 75){score = 3;}
+        String score = sc.next();
 
         switch(score){
-            case 1:
+            case "A":
                 System.out.println("A등급입니다.");
                 break;
-            case 2:
+            case "B":
                 System.out.println("B등급입니다.");
                 break;
-            case 3:
+            case "C":
                 System.out.println("C등급입니다.");
                 break;
             default:
@@ -24,3 +20,4 @@ public class Main {
                 break;
         }
     }
+}
